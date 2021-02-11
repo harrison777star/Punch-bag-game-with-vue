@@ -1,0 +1,83 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background: linear-gradient(rgba(0, 0, 0, 0.753), rgba(0, 0, 0, 0.87)), url('../images/background.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin: 0px;
+    padding: 0px;
+}
+#punch-bag{
+  text-align: center;
+}
+h1{
+    font-size: 40px;
+    color: white;
+}
+#bag{
+    position: relative;
+    height: 500px;
+    width: 200px;
+    margin: 0px auto;
+    background: url("../images/bag.png");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#bag-health{
+    
+    width: 250px;
+    margin: 0px auto 20px;
+    box-shadow: 1px 2px 1px 2px rgba(255, 255, 255, 0.171);
+}
+#bag-health div.weak{
+    background-color: crimson;
+}
+#bag-health div{
+    background-color: white;
+    height: 30px;
+}
+#bag.burst{
+    background: url('../images/bag-burst\ \(1\).png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+button{
+    padding: 5px 20px;
+    border: none;
+    outline: none;
+    box-shadow: 1px 2px 1px 2px rgba(255, 255, 255, 0.336);
+    transition: 1s all;
+}
+button:hover{
+    background-color: crimson;
+    color: white;
+    transition: 1s all;
+}
+p{
+    font-size: 20px;
+    font-weight: 900;
+    color: red;
+}
+
+@media only screen and (max-width: 768px){
+    #bag{
+        height: 450px;  
+    }
+    #bag-health{
+        margin: 10px auto;
+    }
+    h1{
+        font-size: 30px;
+    }
+    #bag-health div{
+        background-color: white;
+        height: 20px;
+    }
+    button{
+        padding: 3px 18px;
+    }
+}
+
+

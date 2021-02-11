@@ -1,0 +1,28 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Punching Bag Game</title>
+    <link rel="stylesheet" href="css/mystyle.css">
+</head>
+<body>
+    <section id="punch-bag">
+        <h1>Click The Bag To Punch</h1>
+<div id="bag" v-bind:class = "{burst: gameOver}" v-on:click = "punch(), gameOver = gameOver">
+</div>
+
+<div id="bag-health">
+    <div v-bind:style = " {width: startGame + '%'} " v-bind:class = "{weak: weakBag}"></div>
+</div>
+
+<div id="control">
+    <button v-on:click = "restart()">Restart</button>
+</div>
+<p v-show = "gameOver">{{say}}</p>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+   <script src="js/myscript.js"></script>
+</body>
+</html>
